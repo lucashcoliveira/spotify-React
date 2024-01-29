@@ -5,6 +5,12 @@ import smallLeft from '../assets/icons/small-left.png'
 import searchIcon from '../assets/icons/search.png'
 
 const Header = () => {
+  
+  const handleChange = ({target:{value}}) =>{
+    console.log(value)
+    
+  }
+  
   return(
   <div className="header-container">
     <nav className="header__navigation">
@@ -18,7 +24,7 @@ const Header = () => {
       </div>
       <div className="header__search">
         <img src={searchIcon} alt="Search" />
-        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir ?" />
+        <input onChange={handleChange} id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir ?" />
       </div>
       <div className="header__login">
         <button className="subscribe">Inscreva-se</button>

@@ -19,7 +19,6 @@ import card14 from'../assets/playlist/14.jpeg'
 import card15 from'../assets/playlist/15.jpeg'
 
 const Main = () => {
-  
     return(
     <div className="main-container">
         <div className="playlist-container">
@@ -31,6 +30,11 @@ const Main = () => {
             <div className="offer__scroll-container">
             <div className="offer__list">
                 <section className="offer__list-item">
+  
+
+
+
+
   
                   <a href="" className="cards">
                     <div className="cards card1">
