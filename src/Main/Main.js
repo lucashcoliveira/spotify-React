@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import './Main.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay} from '@fortawesome/free-solid-svg-icons';
 import card1 from'../assets/playlist/1.jpeg'
 import card2 from'../assets/playlist/2.png'
 import card3 from'../assets/playlist/3.jpeg'
@@ -17,6 +19,7 @@ import card14 from'../assets/playlist/14.jpeg'
 import card15 from'../assets/playlist/15.jpeg'
 
 const Main = () => {
+  
     return(
     <div className="main-container">
         <div className="playlist-container">
@@ -135,6 +138,24 @@ const Main = () => {
                   </a>
                 </section>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="result-artist" className="hidden">
+        <div className="grid-container">
+          <div className="artist-card" id="">
+            <div className="card-img">
+              <img id="artist-img" className="artist-img"/>
+                <div className="play">
+                  <span className="fa fa-solid da-play"></span>
+                </div>
+            </div>
+              <div className="card-text">
+                <a  title="Foo Fighters" className="vst"  href=""></a>
+                <span className="artist-name" id="artist-name"></span>
+                <span className="artist-categorie">Artista</span>
+              </div>
           </div>
         </div>
       </div>
